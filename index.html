@@ -27,7 +27,7 @@
             <a class="sub-menu__link" href="#">Новинки</a>
           </li>
           <li class="sub-menu__item">
-            <a class="sub-menu__link" href="#">Сливочное</a>
+            <a class="sub-menu__link" href="catalog.html">Сливочное</a>
           </li>
           <li class="sub-menu__item">
             <a class="sub-menu__link" href="#">Щербеты</a>
@@ -47,12 +47,12 @@
         О Компании
       </a></li>
     </ul>
-    <div class="sidebar-contacts-container">
+    
       <div class="main-navigation__sidebar navigation-sidebar">
-        <form class="navigation-sidebar__item sidebar-search" action="#" method="GET">
+        <form class="navigation-sidebar__item sidebar-search" action="https://echo.htmlacademy.ru/" method="GET">
           <label class="sidebar-search__label" for="main-search">
             <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17px" height="17px" viewBox="0 0 17 17" enable-background="new 0 0 17 17" xml:space="preserve">
-           <g id="Layer_2">
+           <g id="search-Layer_2">
              <path fill="#FFFFFF" d="M16.958,15.527L11.75,10.32C12.533,9.247,13,7.93,13,6.5C13,2.91,10.09,0,6.5,0S0,2.91,0,6.5
                S2.91,13,6.5,13c1.438,0,2.763-0.473,3.839-1.263l5.205,5.204L16.958,15.527z M6.5,11C4.019,11,2,8.981,2,6.5S4.019,2,6.5,2
                S11,4.019,11,6.5S8.981,11,6.5,11z"/>
@@ -65,7 +65,7 @@
         </form>
         <div class="sidebar-login-container">
           <a class="navigation-sidebar__item sidebar-login" href="#">
-            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+            <svg version="1.1" id="login-Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
             width="21px" height="19px" viewBox="0 0 21 19" enable-background="new 0 0 21 19" xml:space="preserve">
            <g>
              <polygon fill="#FFFFFF" points="6,14.875 12.917,9.5 6,4.125 6,7.042 -0.042,7.042 -0.042,11.959 6,11.959 	"/>
@@ -75,7 +75,7 @@
            </svg>
             Вход
           </a>
-          <form class="login-form" action="" method="GET">
+          <form class="login-form" action="https://echo.htmlacademy.ru/" method="GET">
             <input class="login-form__input input-text" type="email" name="user-email" placeholder="Электронная почта">
             <input class="login-form__input input-text" type="password" name="user-password" placeholder="Пароль">
             <div class="button-link-container">
@@ -89,7 +89,7 @@
         </div>
         <div class="basket-logo-container">
           <a class="navigation-sidebar__item sidebar-basket" href="#">
-            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+            <svg version="1.1" id="basket-Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
             width="21px" height="20px" viewBox="0 0 21 20" enable-background="new 0 0 21 20" xml:space="preserve">
             <g>
               <polygon fill="transparent" points="5.888,4.031 6.922,13 17.372,13 18.548,4.031 "/>
@@ -101,20 +101,18 @@
             </svg>
             Пусто
           </a>
-          <form class="basket-form" action="" method="POST">
-
-          </form>
         </div>
       </div>
-      <div class="main-header__contacts header-contacts">
-        <p class="header-contacts__text">
-          C 10 до 20, ежедневно
-          <span class="header-contacts__phone">8 812 450-25-25</span>
-        </p>
-      </div>
-    </div>
+      
   </nav>
-
+  <div class="breadcrumbs-contacts-container container">
+    <div class="main-header__contacts header-contacts">
+      <p class="header-contacts__text">
+        C 10 до 20, ежедневно
+        <a class="header-contacts__phone" href="tel:88124502525">8 812 450-25-25</a>
+      </p>
+    </div>
+  </div>
 </header>
 
 <main class="main-content">
@@ -229,7 +227,7 @@
     <p class="mailing__description">
       Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)
     </p>
-    <form class="mailing__form" action="!!!ВСТАВИТЬАДРЕС!!!">
+    <form class="mailing__form" action="https://echo.htmlacademy.ru/">
       <input class="mailing__input input-text" type="email" name="email" placeholder="Электронная почта">
       <button class="mailing__button button-red" type="submit">Отправить</button>
     </form>
@@ -239,7 +237,7 @@
 <section class="location">
   <h2 class="visually-hidden">Адрес магазина Глейси</h2>
   <img class="location__image" src="img/map-image.jpg" width="1200" height="430" alt="Наш адрес: город Санкт-Петербург, улица Большая Конюшенная, дом 19, корпус 8. Телефон: 8 812 450 25 25. Ежедневно с 10 до 20">
-  <iframe src="https://yandex.ru/map-widget/v1/-/CCWAAM2f" width="100%" height="430" frameborder="0" allowfullscreen="true"></iframe>
+  <iframe src="https://yandex.ru/map-widget/v1/-/CCWAAM2f" height="430"></iframe>
   <div class="location__info">
     <p class="location__adress">
       Адрес главного офиса<br> и офлайн-магазина:
@@ -254,15 +252,17 @@
   </div>
 </section>
 
+</main>
+
 <footer class="main-footer container">
   <ul class="social">
     <li><a class="social__button social__button--twitter" href="#">
       <span class="visually-hidden">Твиттер</span>
       <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="32px"
 	    height="32px" viewBox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="preserve">
-    <g id="Layer_1">
+    <g id="twitter-Layer_1">
     </g>
-    <g id="Layer_2">
+    <g id="twitter-Layer_2">
       <path fill="#FFFFFF" d="M16,0C7.164,0,0,7.164,0,16c0,8.837,7.164,16,16,16c8.837,0,16-7.163,16-16C32,7.164,24.837,0,16,0z
         M23.944,12.809c-0.251,6.516-3.463,10.832-10.992,10.702c-0.14,0-0.205,0-0.233,0c-0.015,0-0.021,0-0.021,0
         c-0.029,0-0.094,0-0.232,0c-0.447,0-4.543-0.443-5.344-1.823c2.479,0.19,4.247-0.406,5.12-1.136
@@ -276,7 +276,7 @@
     </a></li>
     <li><a class="social__button social__button--insta" href="#">
       <span class="visually-hidden">Инстаграмм</span>
-      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+      <svg version="1.1" id="insta-Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
       width="32px" height="32px" viewBox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="preserve">
     <g>
       <path fill="#FFFFFF" d="M20.916,16c0,2.728-2.211,4.938-4.938,4.938S11.039,18.728,11.039,16c0-0.394,0.051-0.773,0.138-1.14
@@ -292,7 +292,7 @@
     </a></li>
     <li><a class="social__button social__button--fb" href="#">
       <span class="visually-hidden">Фейсбук</span>
-      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+      <svg version="1.1" id="fb-Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
       width="32px" height="32px" viewBox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="preserve">
       <path fill="#FFFFFF" d="M16,0C7.164,0,0,7.163,0,16s7.164,16,16,16c8.837,0,16-7.164,16-16S24.837,0,16,0z M20.062,9.455h-3.021
       v3.444h3.021v3.445h-3.021v8.61h-3.021v-8.61H11v-3.445h3.021V9.455c0-1.902,1.353-3.445,3.021-3.445h3.021V9.455z"/>
@@ -300,7 +300,7 @@
     </a></li>
     <li><a class="social__button social__button--vk" href="#">
       <span class="visually-hidden">Вконтакте</span>
-      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+      <svg version="1.1" id="vk-Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
        width="32px" height="32px" viewBox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="preserve">
     <g>
       <path fill="#FFFFFF" d="M16.637,14.495c0.402-0.019,0.719-0.082,0.951-0.188c0.326-0.145,0.54-0.33,0.641-0.559
@@ -334,17 +334,34 @@
     </a></li>
   </ul>
   <p class="footer-copyright">
-    <a href="#"><img src="img/logo-htmlacademy-small.svg" width="111" alt="Логотип HTML academy" class="footer-copyright__logo"></a>
-    <span>Сделано в <a href="#">HTML Academy</a> © 2019</span>
+    <a href="#"><img src="img/logo-htmlacademy-small.svg" width="112" height="38" alt="Логотип HTML academy" class="footer-copyright__logo"></a>
+    <span>Сделано в <a class="link-transp-bg" href="#">HTML Academy</a> © 2019</span>
   </p>
 </footer>
 
-</main>
-
-<footer>
-
-</footer>
+<div class="feedback-form-overlay">
+  <form class="feedback-form" action="https://echo.htmlacademy.ru/" method="POST">
+    <h2 class="visually-hidden">форма обратной связи</h2>
+    <p class="feedback-form__promise">
+      Мы обязательно вам ответим!
+    </p>
+    <div class="feedback-form__input-wrapper">
+      <input class="feedback-form__input input-text" type="text" name="username" placeholder="Как вас зовут?">
+      <input class="feedback-form__input input-text" type="email" name="useremail" placeholder="Ваша почта для ответа?">
+    </div>
+    <textarea class="input-text" name="usercomment" rows="5" placeholder="Напишите что-нибудь..."></textarea>
+    <button class="feedback-form__submit-button button-red" type="submit">
+      Отправить
+    </button>
+    <button class="feedback-form__close-button">
+      <span class="visually-hidden">закртыть</span>
+    </button>
+  </form>
+</div>
 
 </div>
+
+<script src="js/script.js"></script>
+
 </body>
 </html>
