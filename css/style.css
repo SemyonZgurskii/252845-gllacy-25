@@ -239,6 +239,7 @@ input[type="radio"].visually-hidden {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  max-width: 670px;
   padding-left: 0;
   margin: 0;
   margin-right: auto;
@@ -731,7 +732,7 @@ input[type="radio"].visually-hidden {
 .basket-form__button {
   -ms-flex-item-align: end;
       align-self: flex-end;
-  padding: 9px 11px;
+  padding: 9px 14px;
   padding-bottom: 10px;
 
   border-radius: 22px;
@@ -907,7 +908,7 @@ input[type="radio"].visually-hidden {
 }
 
 .special {
-  margin-bottom: 25px;
+  margin-bottom: 23px;
 }
 
 .special__list {
@@ -956,6 +957,7 @@ input[type="radio"].visually-hidden {
 .special-offer__description {
   width: 520px;
   margin: 0;
+  margin-bottom: 10px;
   
   font-size: 18px;
   line-height: 22px;
@@ -980,17 +982,19 @@ input[type="radio"].visually-hidden {
 .special__item--raspbery {
   background-color: #4d060e;
   background-image: url("../img/raspbery-action.jpg");
-  background-repeat: no-repeat;
+  background-position: 22% 52%;
+  background-repeat: repeat;
 }
 
 .special__item--chocolate {
   background-color: #42271b;
   background-image: url("../img/chocolate-action.jpg");
-  background-repeat: no-repeat;
+  background-position: 81% 47%;
+  background-repeat: repeat;
 }
 
 .best-product {
-  margin-bottom: 2px;
+  margin-bottom: 1px;
 }
 
 .best-product__list {
@@ -1112,6 +1116,7 @@ input[type="radio"].visually-hidden {
 
   width: 200px;
   height: 44px;
+  padding: 10px 10px;
   
   border-radius: 22px;
   opacity: 0;
@@ -1343,7 +1348,7 @@ input[type="radio"].visually-hidden {
 .location {
   position: relative;
 
-  margin-bottom: 14px;
+  margin-bottom: 15px;
 }
 
 .location iFrame {
@@ -1426,7 +1431,7 @@ input[type="radio"].visually-hidden {
 
 .location__feedback-button {
   height: 45px;
-  padding: 0 27px 3px 28px;
+  padding: 10px 27px 8px 28px;
   
   color: #fefefe;
   
@@ -1619,7 +1624,7 @@ input[type="radio"].visually-hidden {
   right: 0;
 
   content: "";
-  width: 30px;
+  width: 35px;
   height: 36px;
 
   border-top-right-radius: 9px;
@@ -1771,6 +1776,8 @@ input[type="radio"].visually-hidden {
 }
 
 .fat-filter {
+  max-width: 857px;
+  
   padding: 0;
 }
 
@@ -1783,6 +1790,7 @@ input[type="radio"].visually-hidden {
       flex-wrap: wrap;
   margin: 0;
   padding: 9px 15px;
+  padding-bottom: 0;
 
   background-color: #a9b9af;
   border-radius: 18px;
@@ -1801,6 +1809,8 @@ input[type="radio"].visually-hidden {
 .fat-filter__label {
   position: relative;
 
+  margin-bottom: 9px;
+  
   line-height: 18px;
   font-weight: 500;
 
@@ -1860,6 +1870,7 @@ input[type="radio"].visually-hidden {
 }
 
 .product-filter__fillers {
+  max-width: 857px;
   margin: 0;
   padding: 0;
 }
@@ -1875,6 +1886,8 @@ input[type="radio"].visually-hidden {
 
 .fillers-filter__label {
   position: relative;
+
+  margin-bottom: 9px;
 
   font-size: 16px;
   line-height: 18px;
@@ -2008,6 +2021,12 @@ input[type="radio"].visually-hidden {
 .pagination__link:hover,
 .pagination__link:focus {
   background-color: rgba(255, 255, 255, 0.2);
+}
+
+.pagination__link:active {
+  color: #323232;
+  
+  background-color: #ffffff;
 }
 
 .pagination__link.pagination__link--current {
