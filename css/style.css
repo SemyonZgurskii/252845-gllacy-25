@@ -423,7 +423,7 @@ input[type="radio"].visually-hidden {
   position: relative;
 }
 
-.sidebar-search__label {
+.sidebar-search__link {
   display: block;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -436,7 +436,7 @@ input[type="radio"].visually-hidden {
   cursor: pointer;
 }
 
-.sidebar-search__input-container {
+.sidebar-search__form {
   position: absolute;
   bottom: -80px;
   right: 0;
@@ -455,13 +455,14 @@ input[type="radio"].visually-hidden {
   width: 310px;
 }
 
-.sidebar-search:hover  .sidebar-search__input-container  {
+.sidebar-search__link:focus + .sidebar-search__form,
+.sidebar-search:hover .sidebar-search__form  {
   z-index: 1;
   opacity: 1;
 }
 
 
-.sidebar-search__input-container:focus-within {
+.sidebar-search__form:focus-within {
   z-index: 1;
   opacity: 1;
 }
@@ -552,7 +553,8 @@ input[type="radio"].visually-hidden {
   fill: #323232;
 }
 
-.sidebar-search__label:hover,
+.sidebar-search__link:hover,
+.sidebar-search__link:focus,
 .sidebar-login:hover,
 .sidebar-login:focus,
 .sidebar-basket:hover,
@@ -562,7 +564,8 @@ input[type="radio"].visually-hidden {
   background-color: #ffffff;
 }
 
-.sidebar-search__label:hover path,
+.sidebar-search__link:hover path,
+.sidebar-search__link:focus path,
 .sidebar-login:hover path,
 .sidebar-login:hover polygon,
 .sidebar-login:focus path,
@@ -1966,7 +1969,6 @@ input[type="radio"].visually-hidden {
 
 .catalog {
   margin-bottom: 20px;
- 
 }
 
 .catalog__list {
